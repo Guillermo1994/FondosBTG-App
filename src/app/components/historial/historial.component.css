@@ -1,0 +1,73 @@
+/* Estilo del botón de Regresar */
+.btn-back {
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #004494;
+}
+
+/* Ícono del botón */
+.btn-back i {
+  font-size: 1.2em;
+}
+
+/* Contenedor de la tabla */
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+/* Estilo de cabecera */
+.custom-table thead th {
+  background-color: #0066cc;
+  color: #ffffff;
+  padding: 12px;
+  text-align: center;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Filas alternas */
+.custom-table tbody tr {
+  background-color: #f4f8fc;
+  transition: background-color 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #e6f0fa;
+}
+
+/* Celdas */
+.custom-table tbody td {
+  padding: 12px;
+  text-align: center;
+  color: #333;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Botón de Cancelar */
+.btn-cancelar {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-cancelar:hover {
+  background-color: #ff4b4b;
+}
+

@@ -1,0 +1,90 @@
+/* Título principal */
+.text-primary {
+    color: #0056b3;
+  }
+  
+  /* Botón Ver Historial */
+  .btn-historial {
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-historial:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Tarjeta de perfil del cliente */
+  .cliente-card {
+    background-color: #f1f9ff;
+    border-radius: 8px;
+    color: #333;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 1.1em;
+  }
+  
+  .cliente-card p {
+    margin: 8px 0;
+  }
+  
+  /* Tarjeta de fondo */
+  .fondo-card {
+    background-color: #f9fbfc;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .fondo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botón de apertura */
+  .btn-apertura {
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-apertura:hover {
+    background-color: #004494;
+  }
+  
+  /* Modal de apertura */
+  .modal-apertura .modal-header {
+    background-color: #e3f2fd;
+  }
+  
+  .modal-apertura .modal-title {
+    color: #0056b3;
+  }
+  
+  .modal-footer .btn-primary {
+    background-color: #0056b3;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .modal-footer .btn-primary:hover {
+    background-color: #004494;
+  }
+  
+  .modal-footer .btn-secondary:hover {
+    background-color: #ddd;
+  }
+  .btn-historial {
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-historial:hover {
+    background-color: #004494;
+  }
+  
