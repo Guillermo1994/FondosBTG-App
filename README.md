@@ -1,27 +1,74 @@
-# FondosBTGApp
+# Aplicación de Gestión de Fondos de Inversión
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+Aplicación de Angular para la gestión de fondos de inversión, donde los clientes pueden abrir y cancelar fondos, consultar su historial de transacciones y recibir notificaciones. Esta aplicación se conecta a un backend en Java Spring Boot para la persistencia de datos y la lógica de negocio.
 
-## Development server
+## Tabla de Contenidos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Características](#características)
+- [Tecnologías](#tecnologías)
+- [Requisitos](#requisitos)
+- [Instalación](#instalación)
+- [Configuración](#configuración)
+- [Uso](#uso)
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Características
 
-## Build
+- **Apertura de Fondos:** Permite a los usuarios abrir un fondo si cumplen con los requisitos de saldo.
+- **Cancelación de Fondos:** Facilita la cancelación de suscripciones a fondos, con mensajes de confirmación y validaciones.
+- **Historial de Transacciones:** Muestra un historial completo de las transacciones de fondos.
+- **Notificaciones:** Opción de notificación vía SMS o correo electrónico al abrir o cancelar fondos.
+- **Interfaz de Usuario:** Diseño intuitivo y moderno implementado en Angular.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tecnologías
 
-## Running unit tests
+- **Frontend:** Angular, TypeScript, Bootstrap, SweetAlert2 (para alertas)
+- **Backend:** Java Spring Boot
+- **Servicios de API:** Implementación de RESTful API
+- **Base de Datos:** Oracle (configurable en el backend)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Requisitos
 
-## Running end-to-end tests
+- **Node.js** (v14 o superior)
+- **Angular CLI** (v12 o superior)
+- **Java JDK** (v11 o superior)
+- **Servidor Oracle** (o base de datos compatible)
+- **Backend:** [Repositorio del Backend](https://github.com/usuario/backend-repo)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Instalación
 
-## Further help
+1. Clona este repositorio en tu máquina local:
+   ```bash
+   git clone https://github.com/Guillermo1994/FondosBTG-App
+   cd fondosBTG-App
+   ```
+2. Instala las dependencias del proyecto:
+   ```bash
+   npm install
+   ```
+3. Asegúrate de tener el backend en Java Spring Boot configurado y en ejecución.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Configuración
+
+1. Backend URL Global: En el archivo src/environments/environment.ts, configura la URL base del backend.
+
+   apiUrl: 'http://localhost:8080'
+
+2. Integración con Backend: Asegúrate de que los servicios de API coincidan con las rutas configuradas en el backend de Java Spring Boot.
+
+## Uso
+
+1. Ejecutar la aplicación en modo desarrollo:
+
+   ```bash
+   ng serve
+   ```
+
+2. Acceder a la aplicación: Abre tu navegador y navega a http://localhost:4200.
+
+3. Funciones Disponibles:
+
+- Apertura de Fondos: Navega a la sección de apertura de fondos y selecciona un fondo.
+- Cancelación de Fondos: Visualiza el historial de fondos y utiliza la opción de cancelación.
+- Notificaciones: Configura el canal de notificación en la apertura de un fondo.
