@@ -30,11 +30,10 @@ export class HistorialComponent {
       error: (error) => {
         console.error('Error al cargar el historial:', error);
         Swal.fire({
-          icon: 'error',
-          title: 'Error al cargar historial',
-          text: `No se pudo obtener el historial del cliente: ${
-            error.message || 'Error desconocido'
-          }`,
+          icon: 'warning',
+          title: 'No hay datos de historial para cargar',
+          text: `No se pudo obtener registros, agregue una nueva transacción`,
+          confirmButtonColor: '#007bff',
         });
       },
     });
